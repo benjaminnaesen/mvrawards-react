@@ -1,11 +1,11 @@
-import React from 'react';
+import React, { FC, ReactElement } from 'react';
+
 import './App.css';
 
-function App() {
-  return (
-    <div className="App">
-    </div>
-  );
-}
+interface AppProps {}
+
+const App: FC<AppProps> = (): ReactElement => {
+	return <div className="App"></div>;
+};
 
 export default App;
